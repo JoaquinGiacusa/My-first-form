@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My first FORM</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <script async src="./index.js"></script>
+  </head>
+  <body>
+    <form class="my-form">
+      <label class="container-name">
+        <span class="label-name">Name</span>
+        <input class="input-username" name="username" type="text" />
+      </label>
+
+      <div>
+        <h4>About the things you learned, which one did you like the most?</h4>
+        <select class="selector-options" name="selector-options">
+          <option value="class">Class</option>
+          <option value="css">CSS</option>
+          <option value="html">HTML</option>
+          <option value="javascript">JavaScript</option>
+        </select>
+      </div>
+
+      <div class="prefer-study">
+        <h4 class="when-prefer-study">I prefer to study during:</h4>
+        <div class="day">
+          <input name="moment-of-day" type="radio" value="day" />
+          <label>Day</label>
+        </div>
+        <div class="night">
+          <input name="moment-of-day" type="radio" value="night" />
+          <label>Night</label>
+        </div>
+      </div>
+
+      <div class="difficult-topics">
+        <h4>What were the most difficult topics?</h4>
+        <div>
+          <input type="checkbox" name="diff-topic" value="promises" />Promises
+        </div>
+        <div>
+          <input type="checkbox" name="diff-topic" value="typescript" />
+          Typescript
+        </div>
+        <div>
+          <input type="checkbox" name="diff-topic" value="class" />Class
+        </div>
+        <div>
+          <input type="checkbox" name="diff-topic" value="function" />Function
+        </div>
+      </div>
+
+      <div class="button-container">
+        <button class="button-send">Send</button>
+      </div>
+    </form>
+  </body>
+</html>
